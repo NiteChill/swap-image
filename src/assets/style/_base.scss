@@ -1,0 +1,58 @@
+// base ..
+
+@import './variable';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  font-size: 1.6rem;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.material-symbols-outlined {
+  font-size: 4rem;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0;
+}
+
+.active {
+  & div {
+    background: var(--primary-container);
+    & span {
+      color: var(--on-surface);
+    }
+  }
+  & p {
+    color: var(--on-surface);
+  }
+  &:hover {
+    & div {
+      background: var(--primary-container);
+      & span {
+        color: var(--on-surface);
+      }
+    }
+    & p {
+      color: var(--on-surface);
+    }
+  }
+}
